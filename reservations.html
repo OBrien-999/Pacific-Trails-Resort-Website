@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="This site describes the various
+    experiences, amenities, and opportunities available at Pacific Trails
+    Resort. The user can also book a stay at Pacific Trails Resort.">
+    <title>
+        Pacific Trails Resort :: Reservations
+    </title>
+    <meta charset="utf-8">
+    <link href="pacific.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>
+            Pacific Trails Resort
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">
+                Home
+            </a></li>
+            <li><a href="yurts.html">
+                Yurts
+            </a></li>
+            <li><a href="activities.html">
+                Activities
+            </a></li>
+            <li><a href="reservations.html">
+                Reservations
+            </a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>
+            Reservations at Pacific Trails
+        </h2>
+        <h3>
+            Contact Us Today!
+        </h3>
+        <p>
+            Required fields are marked with an asterisk *
+        </p>
+        <form action="https://webdevbasics.net/scripts/pacific.php" method="post">
+            <label for="myFName">
+                * First Name:
+            </label>
+            <input id="myFName" name="myFName" required="required" type="text">
+            <label for="myLName">
+                * Last Name:
+            </label>
+            <input id="myLName" name="myLName" required="required" type="text">
+            <label for="myEmail">
+                * E-mail:
+            </label>
+            <input id="myEmail" name="myEmail" required="required" type="email">
+            <label for="myPhone">
+                Phone:
+            </label>
+            <input id="myPhone" maxlength="12" name="myPhone" type="tel">
+            <label for="myArrival">
+                Arrival Date:
+            </label>
+            <input id="myArrival" name="myArrival" type="date">
+            <label for="myNights">
+                Nights:
+            </label>
+            <input id="myNights" max="14" min="1" name="myNights" type="number">
+            <label for="myComments">
+                * Comments:
+            </label>
+            <textarea cols="30" id="myComments" name="myComments" required="required" rows="2"></textarea>
+            <input type="submit" value="submit">
+        </form>
+        <div>
+            <span class="resort"> Pacific Trails Resort </span> <br>
+            <span id="contact">
+                12010 Pacific Trails Road <br>
+                Zephyr, CA 95555 <br> <br>
+                888-555-5555 <br> <br>
+            </span>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 2020 Pacific Trails Resort <br>
+        <a href="mailto:noah@obrien.com">
+            noah@obrien.com
+        </a>
+    </footer>
+</div>
+</body>
+</html>
+
